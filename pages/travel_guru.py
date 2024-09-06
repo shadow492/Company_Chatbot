@@ -140,7 +140,7 @@ if HugginngFaceAPI:
 
     # Define dataset paths
     dataset_en = 'https://raw.githubusercontent.com/shadow492/Company_Chatbot/main/en.txt?token=GHSAT0AAAAAACXDNKR66RHWGC7ZNKRKPOEQZW2V6EA'
-    dataset_hi = '/Users/dhairyabhatt/tensorflow-test/Company_Chatbot/hi.txt'
+    dataset_hi = 'https://raw.githubusercontent.com/shadow492/Company_Chatbot/main/hi.txt?token=GHSAT0AAAAAACXDNKR7DDYGGW675P3EZULGZW2WAKQ'
 
     # Load and combine datasets
     df_en = pd.read_csv(dataset_en)
