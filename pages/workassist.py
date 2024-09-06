@@ -193,7 +193,7 @@ if HugginngFaceAPI:
         input_text = prompt
         statements = [s.strip() for s in input_text.split('.') if s.strip()]
         filtered_statements = filter_statements(statements, bad_words)
-        prompt = '. '.join(filtered_statements)
+        bad_prompt = '. '.join(filtered_statements)
 
         st.session_state.messages.append(ChatMessage(role="user", content=prompt))
         st.chat_message("user").write(prompt)
@@ -206,7 +206,7 @@ if HugginngFaceAPI:
                 content = response.get('output', str(response))
             else:
                 content = str(response)
-            if prompt == "This statement has been filtered due to inappropriate content. Please Use Proper Language.":
+            if bad_prompt == "This statement has been filtered due to inappropriate content. Please Use Proper Language.":
                 st.write("Inappropriate query")
             else:
                 st.session_state.messages.append(ChatMessage(role="assistant", content= response.get("output")))
