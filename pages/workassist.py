@@ -50,7 +50,7 @@ Provide only ONE action per $JSON_BLOB, as shown:
 }}
 ```
 
-Follow this format and donot iterate too much over a topic and be quick in your response:
+Follow this format and be quick in your response:
 
 Question: input question to answer
 Thought: consider previous and subsequent steps
