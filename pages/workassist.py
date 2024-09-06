@@ -33,7 +33,7 @@ st.header("Welcome to Work Assist, your intelligent Enterprise Assistant")
 
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 
-system = '''Respond to the human as helpfully and accurately as possible. You have access to the following tools:
+system = '''Respond to the human as helpfully,accurately and quickly as possible. You have access to the following tools:
 
 {tools}
 
@@ -50,7 +50,7 @@ Provide only ONE action per $JSON_BLOB, as shown:
 }}
 ```
 
-Follow this format and be quick in your response:
+Follow this format and donot iterate too much for a query:
 
 Question: input question to answer
 Thought: consider previous and subsequent steps
