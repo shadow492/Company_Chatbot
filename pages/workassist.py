@@ -194,7 +194,6 @@ if HugginngFaceAPI:
         statements = [s.strip() for s in input_text.split('.') if s.strip()]
         filtered_statements = filter_statements(statements, bad_words)
         prompt = '. '.join(filtered_statements)
-        print(prompt)# replace by output to user
 
         st.session_state.messages.append(ChatMessage(role="user", content=prompt))
         st.chat_message("user").write(prompt)
