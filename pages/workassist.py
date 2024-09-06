@@ -208,7 +208,6 @@ if HugginngFaceAPI:
             else:
                 content = str(response)
             if bad_prompt == "This statement has been filtered due to inappropriate content. Please Use Proper Language.":
-                st.session_state.messages.append(ChatMessage(role="assistant", content= "Query removed, contains offensive and abusive words(Bad Language)"))
                 st.write("Query removed, contains offensive and abusive words(Bad Language)")
 
             else:
