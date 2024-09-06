@@ -196,8 +196,8 @@ if HugginngFaceAPI:
         filtered_statements = filter_statements(statements, bad_words)
         bad_prompt = '. '.join(filtered_statements)
 
-        st.session_state.messages.append(ChatMessage(role="user", content=bad_prompt))
-        st.chat_message("user").write(bad_prompt)
+        st.session_state.messages.append(ChatMessage(role="user", content=prompt))
+        st.chat_message("user").write(prompt)
 
         with st.chat_message("assistant"):
             st_cb = StreamlitCallbackHandler(st.container())
