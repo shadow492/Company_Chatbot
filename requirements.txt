@@ -7,3 +7,4 @@ langchain_community
 langchain_core
 google-search-results
 langchainhub
+load_dotenv
