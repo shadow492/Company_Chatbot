@@ -61,7 +61,6 @@ if st.session_state['otp_sent'] and not st.session_state['authenticated']:
 
 # Step 3: Display content for authenticated users
 if st.session_state['authenticated']:
-    hide_pages(hidden_pages="travel_guru")
     st.switch_page("pages/workassist.py")
     st.header("Welcome to the Secure Section")
     st.write("You have successfully logged in with 2FA.")
