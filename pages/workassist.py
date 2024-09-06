@@ -88,7 +88,8 @@ from dotenv import load_dotenv
 
 # Load environment variables from .env file
 load_dotenv()
-HugginngFaceAPI = os.getenv('HUGGINGFACEHUB_API_TOKEN')
+api_key = "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"
+HugginngFaceAPI = api_key
 
 
 
