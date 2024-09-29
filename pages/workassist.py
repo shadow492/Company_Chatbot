@@ -101,7 +101,7 @@ if HugginngFaceAPI:
     llm = HuggingFaceEndpoint(
             repo_id="HuggingFaceH4/zephyr-7b-beta",
             task="text-generation",
-            max_new_tokens=512,
+            max_new_tokens=5120,
             do_sample=False,
             repetition_penalty=1.03,
             huggingfacehub_api_token="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"
