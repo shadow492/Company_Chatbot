@@ -104,7 +104,7 @@ if HugginngFaceAPI:
             max_new_tokens=512,
             do_sample=False,
             repetition_penalty=1.03,
-            huggingfacehub_api_token="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"
+            huggingfacehub_api_token="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"
 
     )
 
